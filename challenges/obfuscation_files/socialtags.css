@@ -1,0 +1,35 @@
+div.socialtags {
+	margin: 2px 0 0px 0;
+	padding: 0;
+	clear:both;
+}
+
+.socialtags ul {
+	display: inline;
+	margin: 0 !important;
+	padding: 0 !important;
+}
+.socialtags ul li {
+	background: none;
+	display: inline;
+	list-style-type: none;
+	margin: 1px;
+	padding: 1px;
+}
+.socialtags img {
+	float: none;
+	width: auto;
+	height: 16px;
+	border: 0;
+	margin: 0;
+	padding: 0;
+}
+
+.socialtags-hovers {
+	opacity: .4;
+	filter: alpha(opacity=40);
+}
+.socialtags-hovers:hover {
+	opacity: 1;
+	filter: alpha(opacity=100);
+}

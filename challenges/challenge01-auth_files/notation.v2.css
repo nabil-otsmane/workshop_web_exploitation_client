@@ -1,0 +1,183 @@
+/**
+* Plugin Notation
+* par JEM (jean-marc.viglino@ign.fr) et b_b
+*
+* Copyright (c) 2008
+* Logiciel libre distribue sous licence GNU/GPL.
+*
+* Styles utilises par le plugin
+*
+**/
+
+/* jQuery.Rating Plugin CSS - http://www.fyneworks.com/jquery/star-rating/ */
+div.rating-cancel,div.star-rating{float:left;width:17px;height:15px;text-indent:-999em;cursor:pointer;display:block;background:transparent;overflow:hidden}
+div.star-rating,div.star-rating a{background:url('img/star.png') no-repeat 0 0px}
+div.rating-cancel,div.rating-cancel a{background:url('img/delete.gif') no-repeat 0 -16px}
+div.rating-cancel a,div.star-rating a{display:block;width:16px;height:100%;background-position:0 0px;border:0}
+div.star-rating-on a{background-position:0 -16px!important}
+div.rating-cancel.star-rating-on a{background-position:0 0!important}
+div.star-rating-hover a{background-position:0 -32px}
+div.rating-cancel.star-rating-hover a{background-position:0 -16px}
+/* Read Only CSS */
+div.star-rating-readonly a,div.star-rating-readonly{cursor:default !important}
+/* Partial Star CSS */
+div.star-rating{background:transparent!important;overflow:hidden!important}
+/* END jQuery.Rating Plugin CSS */
+
+.formulaire_notation .notation_note { display: inline; }
+.formulaire_notation .note { padding:0; margin:0 5px; line-height: 1em;}
+
+/* Pour affichage dans les modeles
+*/
+
+.notation .note
+{	color:Purple;
+	font-weight:normal;
+}
+
+.notation .topten
+{	border:1px solid #AAE;
+	padding:1px;
+}
+.notation td
+{	padding: 0 5px 0 5px;
+}
+
+.notation .ligne_paire
+{	background-color:#EEF;
+}
+
+.notation thead tr
+{	background-color:#AAE;
+	text-align:center;
+	color:#005;
+}
+
+.notation .auteurs
+{ border:1px solid #AAE;
+  border-bottom:0;
+  border-right:0;
+}
+
+.notation .auteurs .nom
+{ border-bottom:1px solid #AAE;
+}
+.notation .auteurs .note
+{ border:1px solid #AAE;
+	border-left:0;
+	border-top:0;
+}
+.notation .auteurs img
+{  /* width:16px; /* pour afficher la note en plus petit */
+}
+
+.notation .stat
+{ font-size:0.81em;
+  border:1px solid #AAE;
+}
+.notation .barre
+{ background-color:#AAE;
+  height:10px;
+  line-height:5px;
+  font-size:0.4em;
+  display:block;
+  float:left;
+  margin-top:1em;
+  margin-right:1em;
+}
+/* Affichage des critiques */
+.critique
+{ font-size:0.9em;
+  border:1px solid Purple;
+  padding:0;
+}
+.critique .titre-note a
+{	font-weight:bold;
+	color:white;
+	background-color:purple ;
+	padding:0 5px 0 5px;
+	margin:0;
+}
+.critique .spip
+{ margin:0 0 0 5px;
+}
+.critique small
+{ color:Purple;
+  font-size:0.8em;
+  font-weight:normal;
+}
+.critique .grosse_note
+{ float:right;
+  border:2px solid Purple;
+  padding: 0 10px 0 10px;
+  margin-left:3px;
+  color:Purple;
+  font-size:3em;
+  font-weight:bold;
+}
+
+.formulaire_notation button {
+	border: none;
+	background-color: transparent;
+	display: inline;
+	padding: 0;
+	margin: 0;
+	cursor: pointer;
+}
+.formulaire_notation button img {
+	vertical-align:middle;
+	padding: 0 !important;
+	margin: 0;
+}
+
+/* formulaire jaime_jaimepas */
+.formulaire_jaime_jaimepas {}
+.formulaire_jaime_jaimepas div.rating-cancel,
+.formulaire_jaime_jaimepas div.star-rating {margin-bottom:2px;}
+.formulaire_jaime_jaimepas .note {margin:0 5px;}
+.formulaire_jaime_jaimepas .reponse_formulaire {clear:left;margin:0;font-size:90%;padding:3px 3px 0;}
+.formulaire_jaime_jaimepas form div {clear:left;}
+
+.formulaire_jaime_jaimepas form .submit {border:0;background:0;padding:1px 0;cursor:pointer;}
+.formulaire_jaime_jaimepas form .submit:hover {font-weight:bold;}
+
+/* formulaire jaime_jaimepas */
+.formulaire_jaime {}
+.formulaire_jaime div.rating-cancel,
+.formulaire_jaime div.star-rating {margin-bottom:2px;}
+.formulaire_jaime .note {margin:0 5px;}
+.formulaire_jaime .reponse_formulaire {clear:left;margin:0;font-size:90%;padding:3px 3px 0;}
+.formulaire_jaime form div {clear:left;}
+
+.formulaire_jaime .reponse_formulaire_ok {display:none;}
+
+.formulaire_jaime form .submit {border:0;background:0;padding:1px 0;cursor:pointer;}
+.formulaire_jaime form .submit:hover {font-weight:bold;}
+
+
+/**** jaime_coeur ****/
+
+.jaime_coeur{float: left}
+.note_coeur{float: left; font-size: inherit;}
+
+
+/**** surcharge Bootstrap ****/
+input[type="submit"].jaime_coeur, input[type="submit"].jaimeplus_coeur{
+border: 0;
+overflow: hidden;
+text-indent: -200em;
+width: 14px;
+height: 11px;
+margin: 0;
+padding:0;
+}
+input[type="submit"].jaime_coeur, input[type="submit"].jaimeplus_coeur:hover, input[type="submit"].jaimeplus_coeur:active{
+/***** fond coeur spring css ***/
+background: transparent url("img/coeur_spring.png") no-repeat;
+background-position: 0 0;
+}
+input[type="submit"].jaimeplus_coeur, input[type="submit"].jaime_coeur:hover, input[type="submit"].jaime_coeur:active{
+/***** fond coeur spring css ***/
+background: transparent url("img/coeur_spring.png") no-repeat;
+background-position: 100% 0;
+}

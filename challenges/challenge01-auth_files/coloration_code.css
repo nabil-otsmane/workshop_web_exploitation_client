@@ -1,0 +1,19 @@
+.coloration_code pre {
+  background: #eee;
+  padding: 0;
+  -webkit-box-shadow: inset 40px 0 0 #f7f7f7, inset 41px 0 0 #ececf0;
+     -moz-box-shadow: inset 40px 0 0 #f7f7f7, inset 41px 0 0 #ececf0;
+          box-shadow: inset 40px 0 0 #f7f7f7, inset 41px 0 0 #ececf0;
+  white-space: pre-wrap;
+  word-break: break-all;
+  word-wrap: break-word;
+  padding:1em 0;
+}
+.coloration_code .download {text-align: right}
+
+.coloration_code ol {
+	list-style-type: decimal;
+	margin-left:43px;
+}
+.coloration_code ol li { color:#BEBEC5}
+.coloration_code ol li div {color:#444}

@@ -1,0 +1,31 @@
+table.commande{
+	width:100%;
+	border-spacing:0;
+}
+
+table.commande .montant{
+	text-align:right;
+}
+
+table.commande td,table.commande th {
+	padding:0.5em;
+}
+table.commande thead th, table.commande .detail td{
+	border-bottom:1px solid #ddd;
+}
+
+/* Si on ajoute des images dans une description, on centre l'aligement */
+table.commande .detail .description img{
+	vertical-align:middle;
+}
+
+table.commande .total_ttc{
+	font-weight:bold;
+}
+table.commande .total_ttc td{
+	padding-top:1em;
+}
+table.commande .total_taxe td{
+	padding-top:0;
+	padding-bottom:0;
+}
